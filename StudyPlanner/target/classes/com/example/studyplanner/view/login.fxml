@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studyplanner.controller.LoginController">
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+   <children>
+      <VBox alignment="CENTER" layoutX="108.0" layoutY="50.0" prefHeight="300.0" prefWidth="400.0" spacing="10.0">
+         <children>
+            <Label text="Login">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameField" alignment="TOP_LEFT" promptText="Username" />
+            <PasswordField fx:id="passwordField" promptText="Password" />
+            <Label fx:id="messageLabel" textFill="#f20606" />
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Button fx:id="loginButton" mnemonicParsing="false" onAction="#onLoginAction" text="Login" />
+                  <Button fx:id="registerButton" mnemonicParsing="false" onAction="#onRegisterAction" text="Register" />
+               </children>
+            </HBox>
+         </children></VBox>
+   </children>
+</AnchorPane>
